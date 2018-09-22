@@ -84,7 +84,7 @@ bool placeQueens(int curRow) {
  * @return true if the row is clear of queens, false otherwise
  */
 bool isRowClear(int row) {
-  for (int i = 0; i < NUM_ROW; i++) {
+  for (int i = 0; i < NUM_COL; i++) {
     if (board[row][i] == queen) {
       return false;
     }
@@ -98,7 +98,7 @@ bool isRowClear(int row) {
  * @return true if the column is clear of queens, false otherwise
  */
 bool isColClear(int col) {
-  for (int i = 0; i < NUM_COL; i++) {   
+  for (int i = 0; i < NUM_ROW; i++) {   
     if (board[i][col] == queen) {
       return false;
     }
