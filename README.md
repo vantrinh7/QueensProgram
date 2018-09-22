@@ -6,9 +6,9 @@ This program solves the problem of placing eight queens on a 8x8 chessboard such
 
 ## Checking row, column and diagonal
 
-The methods isRowClear and isColClear loop through columns and rows, respectively, and return true if there is no queen in a row or column. The method isDiagonalClear first checks if a move is out of bounds of the chessboard. If true, it stops checking since it already reaches the border. If false, it proceeds to loop through and check the diagonal lines in four directions.
+In the program, the methods isRowClear and isColClear loop through columns and rows, respectively, and return true if there is no queen in a row or column. The method isDiagonalClear first checks if a move is out of bounds of the chessboard. If true, it stops checking since it already reaches the border. If false, it proceeds to loop through and check the diagonal lines in four directions.
 
-## Placing queen recursively
+## Placing queens recursively
 
 After all checks are cleared, method placeQueens puts a queen at a position. It then calls itself recursively, passing the next row. If the recursive call returns false, it means that at some point, it is not possible to place more queens given the position of the already placed queens. This is an incorrect solution. In this case, the function erases the current arrangment, backtracks to the first queen, places it at the next legal column and tries the recursion again.
 
