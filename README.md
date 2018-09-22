@@ -3,7 +3,9 @@
 This program solves the problem of placing eight queens on a 8x8 chessboard such that no queen can capture any other queens (known as the eight queens puzzle, published by chess composer Max Bezzel in 1848). The program finds a way to place queens on the chessboard such that there is only one queen on each row, column and diagonal. This is the output when running this program from Terminal:
 
 <br>
+
 ![](board.png)
+
 <br>
 
 ### Checking row, column and diagonal
