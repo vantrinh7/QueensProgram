@@ -73,9 +73,9 @@ bool placeQueens(int curRow) {
 	}
       }
     }
-  }
   // If the function cannot place any queen in this row that passes the checks, return false.
   return false;
+  }
 }
 
 /**
