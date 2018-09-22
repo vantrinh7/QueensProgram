@@ -10,8 +10,8 @@ In the program, the methods isRowClear and isColClear loop through columns and r
 
 ## Placing queens recursively
 
-After all checks are cleared, method placeQueens puts a queen at a position. It then calls itself recursively, passing the next row. If the recursive call returns false, it means that at some point, it is not possible to place more queens given the position of the already placed queens. This is an incorrect solution. In this case, the function erases the current arrangment, backtracks to the first queen, places it at the next legal column and tries the recursion again.
+After all checks are cleared, method placeQueens puts a queen at a position. It then calls itself recursively, passing the next row. If the recursive call returns false, it means that at some point, no more queens can be placed given the positions of the already placed queens. This is an incorrect solution. In this case, the function erases the current arrangment, backtracks to the first queen, places it at the next legal column and tries the recursion again.
 
 If the recursive call returns true, a queen has been successfully placed in the current row. Because of the recursion, queens have also been placed in all subsequent rows of the board. The correct solution is found. 
 
-This program has both Java and C versions: [Queens.java](https://github.com/vantrinh7/QueensProgram/blob/master/src/Queens.java) and [Queens.c](https://github.com/vantrinh7/QueensProgram/blob/master/queens.c)
+This program has both C and Java versions: [Queens.c](https://github.com/vantrinh7/QueensProgram/blob/master/queens.c) and [Queens.java](https://github.com/vantrinh7/QueensProgram/blob/master/src/Queens.java).
