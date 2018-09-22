@@ -63,7 +63,7 @@ bool placeQueens(int curRow) {
 	bool callNextRow = placeQueens(curRow + 1);
 
 	// If recursive call is true, then return true here, which indicates that the queen in this row has been placed
-	// Because of recursions, queens have also been placed in subsequent rows
+	// Because of recursions, queens have also been placed in subsequent rows, and the solution is found.
 	if (callNextRow == true) {
 	  return true;
 	}
