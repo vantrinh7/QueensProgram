@@ -15,4 +15,6 @@ After all checks are cleared, method placeQueens puts a queen at a position. It 
 
 If the recursive call returns true, a queen has been successfully placed in the current row. Because of the recursion, queens have also been placed in all subsequent rows of the board. The correct solution is found. 
 
+## File description
+
 This program has both C and Java versions: [Queens.c](https://github.com/vantrinh7/QueensProgram/blob/master/queens.c) and [Queens.java](https://github.com/vantrinh7/QueensProgram/blob/master/src/Queens.java).
